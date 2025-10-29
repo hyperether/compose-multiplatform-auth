@@ -1,0 +1,84 @@
+# ========================================
+# Kotlin / Compose Multiplatform Project
+# ========================================
+
+# === Kotlin/Gradle
+.gradle/
+build/
+**/build/
+out/
+
+# === IntelliJ/Android Studio
+.idea/
+*.iml
+*.iws
+
+# === OS files
+.DS_Store
+Thumbs.db
+
+# === Logs
+*.log
+
+# === Android
+*.apk
+*.ap_
+*.aab
+local.properties
+captures/
+.cxx/
+
+# === iOS
+*.xcworkspace/
+*.xcodeproj/
+*.xcuserstate
+*.xcuserdata/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.swp
+*.xccheckout
+*.moved-aside
+DerivedData/
+build/
+Pods/
+Podfile.lock
+
+# === macOS (general)
+*.DS_Store
+*.AppleDouble
+*.LSOverride
+
+# === Windows
+ehthumbs.db
+Desktop.ini
+
+# === Node/Web (if using npm/yarn for JS web setup)
+node_modules/
+dist/
+
+# === Caches
+*.cache/
+kotlin/.kotlin_module
+
+# === JetBrains IDEs (shared)
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/gradle.xml
+.idea/caches/
+.idea/modules.xml
+
+# === Kotlin Multiplatform Mobile specific
+.kmm/
+.kdoctor/
+*.hmap
+*.ipa
+
+# === Jetpack Compose Compiler Caches
+compose-cache/
+
+.kotlin
+/library/library.podspec

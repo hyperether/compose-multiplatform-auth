@@ -1,0 +1,38 @@
+[versions]
+agp = "8.9.3"
+kotlin = "2.1.21"
+android-minSdk = "24"
+android-compileSdk = "35"
+composeMultiplatform = "1.8.1"
+androidx-activity = "1.10.1"
+kotlin-serialization = "1.8.1"
+browser = "1.8.0"
+androidxCredential = "1.5.0"
+googleIdIdentity = "1.1.1"
+androidLegacyPlayServices = "21.3.0"
+googleServices = "4.4.3"
+androidx-startup-runtime = "1.2.0"
+
+
+[libraries]
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity" }
+kotlinSerialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlin-serialization" }
+androidx-browser = { group = "androidx.browser", name = "browser", version.ref = "browser" }
+androidx-startup-runtime = { module = "androidx.startup:startup-runtime", version.ref = "androidx-startup-runtime" }
+
+#Google Sign In
+androidx-credentials = { module = "androidx.credentials:credentials", version.ref = "androidxCredential" }
+androidx-credentials-playServicesAuth = { module = "androidx.credentials:credentials-play-services-auth", version.ref = "androidxCredential" }
+android-legacy-playServicesAuth = { module = "com.google.android.gms:play-services-auth", version.ref = "androidLegacyPlayServices" }
+googleIdIdentity = { module = "com.google.android.libraries.identity.googleid:googleid", version.ref = "googleIdIdentity" }
+
+
+[plugins]
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "composeMultiplatform" }
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+vanniktech-mavenPublish = { id = "com.vanniktech.maven.publish", version = "0.31.0" }
+googleServices = { id = "com.google.gms.google-services", version.ref = "googleServices" }
+kotlinNativeCocoaPods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
