@@ -95,9 +95,9 @@ android {
 }
 
 mavenPublishing {
-//    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
+    publishToMavenCentral()
 
-//    signAllPublications() // TODO commented out for local publishing
+    signAllPublications()
 
     coordinates(group.toString(), "library", version.toString())
 
