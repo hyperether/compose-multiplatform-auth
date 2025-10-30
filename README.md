@@ -266,12 +266,6 @@ result.fold(
 
 ---
 
-## License
-
-MIT – free for personal and commercial use.
-
----
-
 ## Support
 
 Need help integrating or configuring? Feel free to open an issue or contact the maintainers.
